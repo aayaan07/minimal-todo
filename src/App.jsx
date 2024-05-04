@@ -157,7 +157,7 @@ function App() {
 
       </div>
 
-      <div className='githubContainer' onClick={window.open('https://github.com/aayaan07/minimal-todo', '_blank')} >
+      <div className='githubContainer' onClick={() => window.open('https://github.com/aayaan07/minimal-todo', '_blank')} >
         <FaGithub className='github' />
       </div>
 
