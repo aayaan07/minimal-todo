@@ -1,0 +1,142 @@
+.container {
+  /* background-color: red; */
+  width: 400px;
+  height: fit-content;
+  margin: 0;
+  padding: 0;
+  animation-name: slideFromLeft;
+  animation-duration: 2000ms;
+  animation-timing-function: ease-out;
+}
+
+.container .header {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+}
+
+.header .nameText {
+  font-family: var(--Poppins);
+  color: var(--gray1);
+  font-weight: 500;
+  font-size: 15px;
+}
+
+.header .heading {
+  font-family: var(--Poppins);
+  font-weight: 700;
+  color: var(--black1);
+  font-size: 28px;
+}
+
+.header .belowHeading {
+  font-family: var(--Poppins);
+  color: var(--gray1);
+  font-size: 13px;
+}
+
+.header .inputCon {
+  margin-top: 10px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  height: 40px;
+}
+
+.container .todoContainer {
+  margin-top: 15px;
+  width: 100%;
+}
+
+.todoContainer .todoTop {
+  color: rgb(34, 34, 34);
+  font-size: 17px;
+  font-weight: 600;
+  font-family: var(--Poppins);
+}
+
+.todoContainer .todos {
+  margin-top: 10px;
+  display: flex;
+  flex-direction: column;
+  /* gap: 10px; */
+}
+
+.todo {
+  display: flex;
+  align-items: center;
+  padding: 2px 6px;
+  width: 100%;
+  /* border-bottom: 1px solid var(--gray1); */
+}
+
+.todo .checkbox {
+  cursor: pointer;
+}
+
+.todo .todoText {
+  outline: none;
+  background-color: transparent;
+  color: var(--black1);
+  font-family: var(--Poppins);
+  margin-left: 8px;
+  border: none;
+  max-width: 70%;
+  text-align: left;
+  height: fit-content;
+}
+
+.todo .icon {
+  width: 18px;
+  height: 18px;
+  cursor: pointer;
+  padding: 6px;
+  margin-left: auto;
+  margin-right: 15px;
+}
+
+.todo .icon:hover {
+  background-color: rgb(211, 211, 211);
+  border-radius: 6px;
+}
+
+.modal {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.githubContainer {
+  width: 45px;
+  height: 45px;
+  background-color: white;
+  border-radius: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 0 10px 2px rgba(0, 0, 0, 0.331);
+  position: fixed;
+  right: 20px;
+  bottom: 20px;
+  cursor: pointer;
+  transition: ease-in-out 250ms;
+  animation-name: slideFromRight;
+  animation-duration: 2000ms;
+  animation-timing-function: ease-out;
+}
+
+.githubContainer:hover {
+  transform: scale(1.05);
+}
+
+.github {
+  width: 35px;
+  height: 35px;
+  filter: grayscale(100%);
+}
+
+@media screen and (max-width: 420px) {
+  .container {
+    width: 95vw;
+  }
+}
