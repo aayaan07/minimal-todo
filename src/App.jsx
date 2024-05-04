@@ -6,6 +6,7 @@ import Checkbox from "react-custom-checkbox";
 import Modal from 'react-modal';
 import { v4 as uuidv4 } from 'uuid';
 import { FaGithub } from "react-icons/fa";
+import './bg.png';
 
 const customStyles = {
   content: {
@@ -156,7 +157,7 @@ function App() {
 
       </div>
 
-      <div className='githubContainer' href='/'>
+      <div className='githubContainer' href='https://github.com/aayaan07/minimal-todo'>
         <FaGithub className='github' />
       </div>
 
